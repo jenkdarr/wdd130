@@ -1,0 +1,372 @@
+
+/*!Git hub push 2/15/25 Validated with no errors for week 7 Home Page Finishing Touches*/
+
+
+/*!--Apply a width to your whole page to keep it from stretching across the whole browser window on very large monitors by making a CSS rule for the <div> we added in the last step with the id of content. Go back to your CSS file. In the new rule we will add, let's set the max-width of the page to 1600px. Doing it on that <div> will make sure that no element on the page can be wider than that.    The fact is that we don't care what size the content of our page is, as long as it's not wider than 1600px. It can certainly be narrower. Using max-width allows for that.  */
+
+
+
+/*!--Margin:The first says to set the top and bottom margins to 0 and the second says to set the left and right margins to auto: meaning to split any margin available between the left and right.*/
+
+
+/*!Classes (.) are used to style multiple elements and are called with a dot (.) in CSS. IDs (#) are used for unique elements and are called with a hash (#) in CSS.*/
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Marck+Script&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    
+}
+
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+
+
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+
+#hero-msg h1, #hero-msg h4{
+    text-align: center;
+
+}
+.button-box{
+    text-align: center;
+}
+
+/*main {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    text-align: center;
+}*/
+
+#background{
+    height: 725px;
+}
+
+body{
+    margin: 0;
+    background-color: beige;  /*!This is the background to the whole page*/
+}
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: lightgrey;
+}
+
+
+
+#hero-msg h1, #hero-msg h4{/*!This is the Have an Adventure and Make Memories with Dry Oar*/
+    text-align: center;
+
+}
+#hero-img{
+    width: 100%;/*!This is the main picture at the top of the page with the nav links above it.*/
+}
+
+
+
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    margin: 25px;/*!This will separate the main picture from the links at the top od the page*/
+    margin-left: 425px;
+    width: 50%;
+    
+}
+
+nav a{
+    padding: 35px;
+    color: darkcyan;/*!This will adjust the colors of the nav links at the top of the page*/
+    text-decoration: none;/*!This will remove the lines under the nav tabs at the top of the page*/
+}
+
+nav a:hover{
+    background-color: azure; /*!This is the color of the nav tabs when you hover over them*/
+    color:aqua
+}
+.book, .join{
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 28px;
+    text-decoration: none;/*!This takes away the line under Book Now and the Join tab*/
+    background-color:darkgreen;/*!This is the color of the book and join button when they are not being selected*/
+    color: #D3D3D3;
+}
+.book:hover, .join:hover{  /*!This is the color of the book and join buttom when you hover over them*/
+    background-color:white ;
+    color:#7C3030 ;
+
+}
+.rivers-card, .camping-card, .rapids-card{ /*!This is the three pictures in the middle of page*/
+    
+    margin: 200px 0;
+}
+.rivers-card .card-image, .camping-card .card-image, .rapids-card .card-image{
+    box-shadow: 5px 5px 10px #6f7364;
+    transition: transform .5s;
+    border: 10px solid#40B5AD ;
+}
+
+.card-image{
+    margin: auto;
+    display: block;
+    height: auto;
+    max-width: 300px;
+    width: 100%;
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.msg {
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.msg h2{
+    font-family:"Birthstone",cursive ;
+    font-size: 50px;
+    
+    width: 100%;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.msg p{
+    font-family: "Birthstone", cursive;
+    font-size: 2rem !important ; /*!This forces the font size*/
+    padding: 10px;
+    width: 100%;
+    
+}
+
+
+
+    
+
+/*.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/*!This is the grid layount for the main section of the HTML*/
+.home-grid{
+    gap: 120px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    grid-template-columns:repeat(10,1fr);/*!Equals 10 columns*/
+
+}
+ .home-grid section {
+    flex: 1;
+    min-width: 300px; /* Prevents items from getting too small 
+    max-width: 400px; /* Limits max width for uniformity */
+    text-align: center;
+}
+
+
+
+
+.card-image{
+    width: 100%;
+    height: auto;
+}
+
+.card-image, .mountains{
+    width: 100%;
+}
+
+.rivers-card{
+    grid-column: 2/4; /*!Starts at column 2 and spans to column 4*/
+    grid-row: 2/3;/*!Starts at row 2 and spans to row 3*/
+}
+
+.camping-card{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+#background{
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.mountains{
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
+.msg{
+    grid-column: 6/10;
+    grid-row: 6/7;
+}
+
+#background{
+    background-color: #814141;/*!This is the color behing the bottom picture of the mountains*/
+
+}
+.msg{
+    padding: 35px;
+    line-height: 1.5em;
+    background-color:tan ;/*!This is the writing below the bottom mountain image.*/
+}
+.msg h2{/*!This is the text More than Just a Thrill*/
+    color:tan;
+}
+.msg p{
+    padding-bottom: 35px;;
+    font-size: 1em;
+    color:black;/*!This is text below Enjoy the breathtaking scenery. From Valley, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beuty of the great outdoors.*/
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+
+footer{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 200px;
+    padding: 25px 50px;
+    background-color: darkolivegreen;/*!This is the color of the footer section on the very bottom of the page*/
+    color: paleturquoise;
+}
+footer a{
+    text-decoration: none; /*!This takes the underline away from the Site Plan and Contact us tabs at the bottom left of the page*/
+    color: coral;/*!This is the color for the site plan and contact us at the bottom of the screen*/
+}
+
+footer p{
+    font-size: 1.2em;/*!This is the font size for the footer section of the page*/
+}
+
+footer p a:hover{
+    text-decoration: underline;/*!This puts a line under the site plan and contact us tab when user hovers over it.*/
+}
+
+
+footer a:hover{
+    
+    color: ivory;/*!This is the color for the site plan and contact us when you hover over them.*/
+}
+h4{
+    font-size: 60px;
+    font-family: "Birthstone", cursive;
+    color:  #E97451;/*!This is the color of the Make Memories with Dry Oar title*/
+}
+h1{
+    margin-top: 10px;
+    font-size: 120px;   
+    font-family: "Marck Script", cursive;/*This is the imported font from the very top of the css page*/
+    color:#C04000;/*!This is the color of the Have an Adventure title*/
+}
+
+
+
+.logo{
+    justify-self: center;
+    align-self: center;
+    padding-top: 5px;
+    width: 80px;/*!This is the size of the Dry Oar Logo at the top right of the page*/
+}
+.icon{
+    padding-top: 10px;
+    width: 100px;/*!This is the little grey icons to the left of the images on the middle of the page*/
+}
+
+h2{
+    color:white;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+            
