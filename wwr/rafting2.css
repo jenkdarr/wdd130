@@ -1,0 +1,74 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox layout for top section */
+.top-section {
+    display: flex;
+    justify-content: space-between; /* Push images to left & right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Style for images */
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Centering navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 150px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.full-width-banner {
+    background-image: url('images/rafting64_600.jpg');
+    background-size: cover; /* Ensures the image covers the full width and height */
+    background-position: center; /* Centers the image */
+    width: 100%;
+    height: 60vh; /* Full height of the viewport */
+}
+footer{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 200px;
+    padding: 25px 50px;
+    background-color: royalblue;/*!This is the color of the footer section on the very bottom of the page*/
+    color: paleturquoise;
+}
+footer a{
+    text-decoration: none; /*!This takes the underline away from the Site Plan and Contact us tabs at the bottom left of the page*/
+    color: coral;/*!This is the color for the site plan and contact us at the bottom of the screen*/
+}
+
+footer p{
+    font-size: 1.2em;/*!This is the font size for the footer section of the page*/
+}
+
+footer p a:hover{
+    text-decoration: underline;/*!This puts a line under the site plan and contact us tab when user hovers over it.*/
+}
+
+
+footer a:hover{
+    
+    color: ivory;/*!This is the color for the site plan and contact us when you hover over them.*/
+}
