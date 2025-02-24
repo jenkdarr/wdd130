@@ -1,0 +1,171 @@
+<!--2-21-25 11:49pm-->
+
+<!DOCTYPE html>
+<html lang="en">     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rafting.css">
+<title> Rafting Adventures | Dry Oar Boating | Home </title>
+</head>
+
+<body>
+   <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <!--src is where the image is located and the alt tag specifies an
+             alternative text for an image, providing a description of the image content
+             in case it cannot be displayed properly -->
+            <img class="logo" src="images/dry_oar_logo.png" alt="Dry Oar Logo">
+        </a>
+        <nav>   <!--The nav tag is for a navigation or a menu.
+             Users usually expect the logo to take them to the 
+            home page of the site, so we will make the <img> element
+            the content of an <a> element with the hypertext reference of
+            going to the home page href="index.html" 
+            and add id="logo_link"-->                                                       
+
+                                                                                       
+
+            <a href="index.html">Home</a>              <!--The anchor tag <a defines a hyperlink, which is used to 
+                                                        link from one page to another-->
+            <a href="#">Page 2</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <div id ="hero">
+             <!--The <div> tag defines a division or a section in an HTML document.
+
+             The <div> tag is used as a container for HTML elements -
+             which is then styled with CSS or manipulated with JavaScript.
+             The <div> tag is easily styled by using the class or id attribute.
+             Any sort of content can be put inside the <div> tag!  This type
+             of tag is also a non semanic element which means that it tells
+             nothing about its content.  The two types of non semantic elements
+             are <div> and <span>
+             There are three types of semantic elements which clearly define its content.
+             <form>, <table>, and <article> 
+
+
+
+            To shorten the code, it is possible to specify all the margin properties in one property.
+
+            The margin property is a shorthand property for the following individual margin properties:
+            
+            margin-top
+            margin-right
+            margin-bottom
+            margin-left
+            So, here is how it works:
+            
+            If the margin property has four values:
+            
+            margin: 25px 50px 75px 100px;
+            top margin is 25px
+            right margin is 50px
+            bottom margin is 75px
+            left margin is 100px
+            Example
+            
+            
+            If the margin property has three values:
+
+            margin: 25px 50px 75px;
+            top margin is 25px
+            right and left margins are 50px
+            bottom margin is 75px 
+            
+            
+            If the margin property has two values:
+
+            margin: 25px 50px;
+            top and bottom margins are 25px
+            right and left margins are 50p
+            
+            
+            If the margin property has one value: margin: 25px;
+            all four margins are 25px-->
+
+           
+           <!-- Explanation of the different parts:
+
+          Content - The content of the box, where text and images appear
+          Padding - Clears an area around the content. The padding is transparent
+          Border - A border that goes around the padding and content
+          Margin - Clears an area outside the border. The margin is transparent
+          The box model allows us to add a border around elements, and to define space between elements. 
+            -->
+            <div id ="hero-box">
+                <!--This is the first main picture on the page.-->
+                <img id="hero-img" src="images/hero_logo.png" alt="People enjoying white water rafting"> 
+            </div>
+         
+            <section id="hero-msg">  <!--A <section>, with the id of 'hero-msg', will hold the 
+                                      hero message -->
+                                      
+                <h1 class="home-title" >Have an Adventure</h1>
+                <h4>Make Memories with Dry Oar </h4>
+                <div class='button-box'>
+                    <a class='book' href="contactus.html">Book Now</a>
+                </div>
+          </section>
+    </div>      
+            <main class="home-grid">
+                <section class="rivers-card">
+                    <img class="card-image" src="images/rivers.jpg" alt="rivers in forest">
+                    <img class="icon" src="images/river_icon.png" alt="river icon">
+                    <h2>Rivers</h2>
+                </section>   
+                <section class="camping-card">
+                    <img class="card-image" src="images/camping.jpg" alt="tent in mountains">
+                    <img class="icon" src="images/fire_icon.png" alt="fire icon">
+                    <h2>Camping</h2>
+                </section>
+                <section class="rapids-card">
+                    <img class="card-image" src="images/rapids.jpg" alt="rafting boat">
+                    <img class="icon" src="images/oars.png" alt="oars icon">
+                    <h2>Rapids</h2>
+                </section> 
+                <div id ="background"></div>  <!--This is located in the styles.css sheet-->
+                <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
+                <section class ="msg">
+                    <h2>More Than Just a Thrill</h2>
+                    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. 
+                        It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
+                    <a class='join' href="rivers.html">Join Us</a>      <!--The <a tag defines a hyperlink, which is used to link from one page to another-->
+                </section>
+           </main> 
+            
+            <footer>                                                                      <!--The <a tag defines a hyperlink, which is used to link from one page to another-->
+            
+                <p>Dry Oar &copy; 2025 - Darren Jenks</p>
+                <p><a href="site-plan-rafting.html">SitePlan</a></p>
+                <p><a href="contactus.html">Contact Us</a></p>
+                <div class="social">
+                    <!--Make sure that all the social media links open in a new window or tab
+                    of the browser with the target= "blank" attribute added to the opening tag
+                    of each <a> Since these are external sites, it's good practice to open then 
+                    in a new tab-->
+                    <a href="https://facebook.com" target="_blank">
+                         <img src="images/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                         <img src="images/twitter.png" alt="twitter icon">
+                    </a>  
+                    <a href="https://instagram.com" target="_blank">
+                         <img src="images/instagram.png" alt="instagram icon">
+                    </a>    
+                </div>
+            </footer>
+
+   </div>
+
+        
+                
+        
+    
+    
+</body>
+</html>
