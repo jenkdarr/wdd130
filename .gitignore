@@ -1,0 +1,14 @@
+# Ignore all HTML files
+*.html
+
+# Ignore all CSS files
+*.css
+
+# Ignore all JavaScript files
+*.js
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore specific folders
+folder_name/
