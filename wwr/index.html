@@ -1,4 +1,4 @@
-<!--2-24-25 6:26pm-->
+<!--2-24-25 9:35pm-->
 
 <!DOCTYPE html>
 <html lang="en">     
@@ -8,6 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="rafting1.css">
 <title> Rafting Adventures | Dry Oar Boating | Home </title>
+
+<style>
+    .navmenu{
+        list-style: none;  /* Removes bullet points */
+    display: flex;     /* Makes items go side by side */
+    justify-content: center; /* Centers the nav */
+    gap: 20px; /* Adds spacing between links */
+    padding: 0; /* Removes default padding */
+    }
+         
+
+
+    
+</style>
+
+
 </head>
 
 <body>
@@ -19,21 +35,22 @@
              in case it cannot be displayed properly -->
             <img class="logo" src="images/dry_oar_logo.png" alt="Dry Oar Logo">
         </a>
-        <nav>   <!--The nav tag is for a navigation or a menu.
+ 
+             <!--The nav tag is for a navigation or a menu.
              Users usually expect the logo to take them to the 
             home page of the site, so we will make the <img> element
             the content of an <a> element with the hypertext reference of
             going to the home page href="index.html" 
             and add id="logo_link"-->                                                       
-        
-            <a href="index2.html">Page2</a>
-            <a href="site-plan-rafting.html">Site Plan</a>
-            <a href="contactus.html">Contact Us</a>
-            <a href="wireframe.html" target="_blank">wireframe</a>
+         <nav>
+            <ul>
+                <div class="navmenu">
+                <li><a href="index2.html">Page2</a></li>
+                <li><a href="wireframe.html">wireframe</a></li>
+                </div>
+        </ul>
 
-
-       
-        </nav>
+       </nav>
     </header>
     <div id ="hero">
              <!--The <div> tag defines a division or a section in an HTML document.
