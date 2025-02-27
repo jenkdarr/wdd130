@@ -22,6 +22,41 @@
         background-color: antiquewhite;
     }
 
+    footer .social img{
+    padding-top: 15px;
+}
+
+
+footer{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 200px;
+    padding: 25px 50px;
+    background-color: beige;/*!This is the color of the footer section on the very bottom of the page*/
+    color: darkmagenta;
+}
+footer a{
+    text-decoration: none; /*!This takes the underline away from the Site Plan and Contact us tabs at the bottom left of the page*/
+    color:darkblue;/*!This is the color for the site plan and contact us at the bottom of the screen*/
+}
+
+footer p{
+    font-size: 1.2em;/*!This is the font size for the footer section of the page*/
+}
+
+footer p a:hover{
+    text-decoration: underline;/*!This puts a line under the site plan and contact us tab when user hovers over it.*/
+}
+
+
+footer a:hover{
+    
+    color:black;/*!This is the color for the site plan and contact us when you hover over them.*/
+}
+
+
+
     
 
 </style>
@@ -91,7 +126,26 @@ Desolation 6 night Trip 2016 Pricing and Dates Regular Rate: $1,790 Trip Dates J
 </h2>-->
 
 
-
+<footer>
+    <p>Dry Oar &copy; 2025 - Darren Jenks</p>
+        <p><a href="wireframe.html">Wireframe</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <!--Make sure that all the social media links open in a new window or tab
+            of the browser with the target= "blank" attribute added to the opening tag
+            of each <a> Since these are external sites, it's good practice to open then 
+            in a new tab-->
+            <a href="https://facebook.com" target="_blank">
+                 <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                 <img src="images/twitter.png" alt="twitter icon">
+            </a>  
+            <a href="https://instagram.com" target="_blank">
+                 <img src="images/instagram.png" alt="instagram icon">
+            </a>    
+        </div>
+ </footer>   
 
 
 
