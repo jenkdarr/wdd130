@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Birthstone&family=Bungee+Hairline&family=Delius&family=Ephesis&family=Imperial+Script&family=Luxurious+Script&family=Marck+Script&family=Ms+Madi&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Spacing out the logos */
+    align-items: center; /* Centers everything vertically */
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.title{
+    text-align: center;
+    font-family: Imperial Script;
+    font-size: 5em;
+}
+
+.intro_paragraph{
+    font-family: Imperial Script;
+    font-size: 5em;
+    color: black;
+}
+
+.picture1{
+    width: 50%;
+    float: left;
+}
+.picture2{
+    float: right;
+    margin-top: -80px;
+}
+nav {
+    flex-grow: 1; /* Makes nav take up the available space */
+    display: flex;
+    justify-content: center; /* Centers nav links between the logos */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adds space between nav links */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+ /*.nav-links a {
+    text-decoration: none;
+    color:crimson; /* Adjust color as needed 
+    font-size: 18px;
+}*/
+
+.logoleft, .logoright {
+    width: 200px; /* Set a fixed size for logos */
+    height: 200px;
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes the default underline */
+    color:blue; /* Adjust color as needed */
+    font-size: 50px;
+    transition: text-decoration 0.3s ease; /* Adds a smooth transition */
+    font-family: Imperial Script;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underlines the link when hovered */
+    color: #f0f0f0; /* Optional: changes color on hover */
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end; /* Aligns the icons to the right */
+    gap: 30px; /* Adds space between icons */
+    margin-top: 20px; /* Adds some space above */
+    width: 100%; /* Optional: adds space on the right */
+}
+
+.social-icon {
+    width: 40px; /* Set the width of the icons */
+    height: auto; /* Maintains aspect ratio */
+    transition: transform 0.2s; /* Adds a hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+.wireframe a:hover{
+    text-decoration: underline; /* Underlines the link when hovered */
+    color: #f0f0f0; /* Optional: changes color on hover */
+
+}
+.wireframe{
+    font-family: Imperial Script;
+    font-size: 5em;
+}
