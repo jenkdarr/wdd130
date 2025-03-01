@@ -1,7 +1,6 @@
 
 
-# Ignore all CSS files
-*.css
+
 
 # Ignore all JavaScript files
 *.js
