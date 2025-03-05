@@ -98,6 +98,22 @@ footer a:hover{
 }
 
 
+.social {
+    display: flex; /* Makes the icons align in a row */
+    gap: 10px; /* Adds spacing between icons */
+    justify-content: flex-end; /* Aligns to the right */
+}
+
+.social a {
+    display: inline-block; /* Ensures proper spacing */
+}
+
+.social img {
+    width: 40px; /* Adjust icon size as needed */
+    height: 40px;
+}
+
+
 
 
 </style>
@@ -126,7 +142,9 @@ footer a:hover{
      <footer>
         <p>Dry Oar &copy; 2025 - Darren Jenks</p>
         <p><a href="images/aboutwireframe.PNG">Wireframe</a>
-            <div class="social">
+            
+          
+          <div class="social">
                 <!--Make sure that all the social media links open in a new window or tab
                 of the browser with the target= "blank" attribute added to the opening tag
                 of each <a> Since these are external sites, it's good practice to open then 
@@ -141,6 +159,7 @@ footer a:hover{
                      <img src="images/instagram.png" alt="instagram icon">
                 </a>    
             </div>
+           
      </footer>   
    
 
