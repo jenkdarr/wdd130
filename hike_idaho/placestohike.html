@@ -55,7 +55,7 @@
     display: flex;
     justify-content: flex-end; /* Aligns the icons to the right */
     gap: 30px; /* Adds space between icons */
-    margin-top: 20px; /* Adds some space above */
+    margin-top: 10px; /* Adds some space above */
     width: 100%; /* Optional: adds space on the right */
 }
 
@@ -69,18 +69,27 @@
     transform: scale(1.1); /* Slightly enlarges the icon on hover */
 }
 
-.wireframe a:hover{
-    text-decoration: underline; /* Underlines the link when hovered */
-    color: #f0f0f0; /* Optional: changes color on hover */
+/*-->.wireframe a:hover{
+    text-decoration: underline; /* Underlines the link when hovered 
+    color: #f0f0f0; /* Optional: changes color on hover 
 
 }
 .wireframe{
     font-family: Imperial Script;
     text-align: center;
     font-size: 5em;
+}*/
+p {
+    text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 
+.hiking{
+    text-align: left;
+}
 
 
 </style>
@@ -100,7 +109,7 @@
 <img src="images/tubb-one.webp" class="picture1">
 
 
-<h1 class="header">Places to Hike in Idaho</h1>
+<h1 class="header">Places to hike in Idaho</h1>
 
 <p class="paragraph_one"> This trail is a 2 mile loop near Coeur d'Alene, Idaho and is considered to be an easy hike.It takes about 1 hour to complete this hike. The best time to enjoy this trail is April through October.  This trail is mostly flat for the first mile and is narrow and made of dirt with several obstacles like rocks and tree roots. The beauty is what makes this particular hike so enticing. The picture to the left is this particular route.</p>
 
@@ -114,8 +123,12 @@
 
 <footer>                                                                      <!--The <a tag defines a hyperlink, which is used to link from one page to another-->
             
-    <p> Hiking &copy; 2025 - Darren Jenks</p>
-    <p><a href="images/aboutwireframe.PNG">Wireframe</a>
+    <p class="hiking"> Hiking &copy; 2025 - Darren Jenks</p>
+    
+    <p style="text-align: center;">
+        <a href="images/placestohikewireframe.PNG">Wireframe</a>
+    </p>
+    
     
     
     <div class="social">
