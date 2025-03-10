@@ -64,8 +64,20 @@
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Keeps the default text color */
 }
+p {
+    text-align: center;
+}
 
+a {
+    text-decoration: none;
+}
 
+.trademark{
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    padding-left: 10px; /* Adjust for spacing */
+}
 
 
 
@@ -102,11 +114,14 @@
 
 
     <footer>                                                                      <!--The <a tag defines a hyperlink, which is used to link from one page to another-->
-            
+          
+        <div class="trademark">
         <p> Hiking&copy; 2025 - Darren Jenks</p>
-        
-        <p class="wireframe"><a href="images/equipment.PNG">Wireframe</a></p>
-        
+        </div>
+        <p style="text-align: center;">
+           <a href="wireframe"><a href="images/equipment.PNG">Wireframe</a>
+           <a href="site-plan.html">Siteplan</a>
+        </p>
         
         <div class="social">
             <!--Make sure that all the social media links open in a new window or tab
